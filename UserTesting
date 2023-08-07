@@ -1,0 +1,73 @@
+package testing;
+
+import org.junit.jupiter.api.Assertions;
+
+import org.junit.jupiter.api.Test;
+
+import dao.BusesDAOImplementation;
+import dao.Buses;
+import dao.BusesDAO;
+
+public class TestUserService {
+
+
+	UserDAO userDAO = new UserDAOImplementation();
+	
+	@Test
+	public void selectTest() {
+		
+		System.out.println("Test started..");
+		Assertions.assertTrue(userDAO!=null);
+		System.out.println("Got the DAO : "+userDAO);
+
+		Buses bus = userDAO.selectUser(1);
+		
+		System.out.println("User Obj : "+user);
+
+		System.out.println("Test over...");
+	}
+
+}
+
+
+
+public class TestUserService {
+
+
+	UserDAO userDAO = new UserDAOImplementation();
+	
+	@Test
+	public void insertTest() {
+	     
+		User user = new User();
+		Assertions.assertTrue(user!=null);
+		System.out.println("user created....");
+		
+		user.userId(6);
+		user.setusername('jane');
+		user.password('sbjbkbjdk');
+		user.firstName('vikas');
+		user.lastName('malik');
+		user.email('bjh@gmail.com');
+		user.phoneNumber('1234567890');
+		user.address('kjbjgjvb');
+		user.dateOfBirth(Date.valueOf("2023-02-09");
+		user.gender('male');
+		
+		userTest.insertUser(user);
+	}
+
+}
+
+
+
+
+	
+
+
+
+
+
+
+	
+	
